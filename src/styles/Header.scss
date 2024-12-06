@@ -1,0 +1,45 @@
+:root {
+  --font: "Roboto", sans-serif;
+}
+
+.header {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.9);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 1px 1px 1px 0px rgba(150, 150, 150, 0.5);
+  height: auto;
+  .container {
+    .infoHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 0;
+      p {
+        color: #0095a0;
+        font-weight: 500;
+        span {
+          font-size: 22px;
+          color: #02575f;
+          font-weight: 800;
+        }
+      }
+      .logo {
+        img {
+          max-width: 100%;
+          width: 140px;
+        }
+      }
+      .onlineConsultation {
+        color: #0095a0;
+        font-weight: 400;
+        span {
+          font-size: 22px;
+          color: #02575f;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,113 @@
+.workflow {
+  margin-top: -5px;
+  position: relative;
+  .thumb {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 540px;
+    }
+    .cross1,
+    .cross2 {
+      width: 40px;
+      height: auto;
+      position: absolute;
+      animation: spin 4s linear infinite;
+    }
+    .cross1 {
+      left: 50px;
+      top: 420px;
+      animation: spin1 4s linear infinite;
+    }
+    .cross2 {
+      right: 50px;
+      top: 70px;
+      animation: spin2 4s linear infinite;
+    }
+    @keyframes spin1 {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes spin2 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .content-workflow {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    h1 {
+      cursor: default;
+      font-size: 35px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: rgb(61, 104, 137);
+    }
+
+    .box-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .box-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid rgb(61, 104, 137);
+        overflow: hidden;
+        img {
+          width: 210px;
+          height: 210px;
+          object-fit: cover;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .info-workflow {
+          margin-top: 20px;
+          h2 {
+            cursor: default;
+            position: absolute;
+            z-index: 2;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(8, 39, 62);
+            &:nth-child(2) {
+              margin-left: 40px;
+            }
+          }
+          p {
+            cursor: default;
+            position: absolute;
+            z-index: 2;
+            margin-top: 34px;
+            width: 250px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: rgb(71, 101, 124);
+          }
+        }
+        &:nth-child(2) {
+          border: 3px solid rgb(71, 209, 168);
+        }
+        &:nth-child(4) {
+          border: 3px solid rgb(71, 209, 168);
+        }
+      }
+    }
+  }
+}
